@@ -1,0 +1,10 @@
+asgiref==3.5.0
+Django==4.0.4
+django-environ==0.8.1
+django-sendgrid==1.0.1
+python-http-client==3.3.7
+sendgrid==3.6.5
+sendgrid-django==4.2.0
+sqlparse==0.4.2
+starkbank-ecdsa==2.0.3
+tzdata==2022.1

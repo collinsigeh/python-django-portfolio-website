@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style_collins.css' %}">
+    <title>Collins Igeh</title>
+</head>
+<body>
+    <div id="page-welcome">
+        <div id="page-hero">
+            <div id="nav-bar">
+                <div id="logo">
+                    Collins Igeh
+                </div>
+                <div id="nav-bar-links">
+                    <ul id="nav-bar-group">
+                        <li class="nav-bar-item"><a href="#about">ABOUT</a></li>
+                        <li class="nav-bar-item"><a href="#">WORK</a></li>
+                        <li class="nav-bar-item"><a href="#">SERVICES</a></li>
+                        <li class="nav-bar-item"><a href="#">EXPERIENCE</a></li>
+                        <li class="nav-bar-item"><a href="#">BRANDS</a></li>
+                        <li class="nav-bar-item"><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page-title">
+                <h1>Software developer<br>and<br>Google certified digital marketer</h1>
+            </div>
+        </div>
+    </div>
+    <div id="page-body">
+        <section id="about">
+            <div class="page-content">
+                <h3><span class="red-text">_</span> HELLO</h3>
+                <p class="para-text">Hi! I’m Collins Igeh, a Software developer and Google certified digital marketer based in the city of Lagos. I enjoy creating modern and functional online experiences.</p>
+                <p class="para-text"><a href="mailto:hello@collinsigeh.com">hello@collinsigeh.com</a></p>
+                <ul class="social-links">
+                    <li><a href="#">TWITTER</a></li>
+                    <li><a href="#">LINKEDIN</a></li>
+                    <li><a href="#">BEHANCE</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="page-content">
+                <h3><span class="white-text">_ GET IN TOUCH</span></h3>
+                <p class="para-text">Got a job you'd like to discuss, I'm all ears.</p>
+                <div class="flex">
+                    <div id="contact-form">
+                        <form action="{% url 'home' %}" method="POST">
+                            {% csrf_token %}
+                            <div class="form-item-group">
+                                <div class="form-item">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="form-item">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div id="form-item">
+                                <textarea name="message" id="message" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
+                            </div>
+                            <div id="form-item">
+                                <input type="submit" class="submit" value="SUBMIT">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="contact-links">
+                        <ul class="social-links">
+                            <li><a href="#">TWITTER</a></li>
+                            <li><a href="#">LINKEDIN</a></li>
+                            <li><a href="#">BEHANCE</a></li>
+                            <li><a href="#">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
