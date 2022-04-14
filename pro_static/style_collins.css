@@ -1,0 +1,137 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#page-welcome{
+    background-image: url("imgs/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#page-hero, .page-content{
+    width: 90%;
+    margin: 0 auto;
+}
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    font-size: xx-large;
+    font-weight: 700;
+    padding: 10px;
+}
+#nav-bar-group{
+    display: flex;
+}
+.nav-bar-item{
+    margin: 5px;
+    padding: 5px 10px;
+    list-style: none;
+}
+.nav-bar-item a{
+    color: #fff;
+    text-decoration: none;
+}
+#page-hero #page-title{
+    height: 450px;
+    text-align: center;
+    padding-top: 210px;
+}
+#page-hero h1{
+    font-size: 42px;
+}
+#page-hero{
+    color: #fff;
+}
+.red-text{
+    color: red;
+}
+.para-text{
+    font-size: x-large;
+}
+#about{
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+#about .para-text{
+    max-width: 1000px;
+    line-height: 1.5;
+}
+.para-text a{
+    color: royalblue;
+    text-decoration: none;
+}
+.social-links{
+    display: flex;
+    margin-left: -50px;
+}
+.social-links li{
+    padding: 5px 10px;
+    list-style: none;
+}
+.social-links a:link{
+    text-decoration: none;
+    color: #363636;
+}
+#contact{
+    background-color: #d32c2c;
+    padding: 100px 0;
+}
+.white-text{
+    color: #fff;
+}
+#contact .para-text{
+    color: #fff;
+    max-width: 1000px;
+    line-height: 1.5;
+}
+#contact .flex{
+    display: flex;
+}
+#contact-form{
+    width: 50%;
+}
+.form-item-group{
+    display: flex;
+}
+.form-item{
+    padding: 5px;
+}
+input.form-control{
+    background: #363636;
+    color: #fff;
+    border: 0;
+    margin: 10px;
+    margin-left: 0;
+    padding: 10px;
+}
+textarea.form-control{
+    background: #363636;
+    color: #fff;
+    border: 0;
+    margin: 15px;
+    margin-left: 5px;
+    padding: 10px;
+}
+input.submit{
+    background: #fff;
+    color: #363636;
+    border: 0;
+    width: 565px;
+    border-radius: 50px;
+    margin: 15px;
+    margin-left: 5px;
+    padding: 10px;
+}
+#contact input.form-control{
+    width: 253px;
+}
+#contact textarea.form-control{
+    width: 545px;
+}
+#contact-links .social-links a:link{
+    text-decoration: none;
+    color: #fff;
+}
